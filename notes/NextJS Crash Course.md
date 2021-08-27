@@ -2,7 +2,7 @@
 tags: [nextjs]
 title: NextJS Crash Course
 created: '2021-08-27T13:28:11.408Z'
-modified: '2021-08-27T17:40:06.236Z'
+modified: '2021-08-27T17:41:44.594Z'
 ---
 
 # NextJS Crash Course
@@ -269,6 +269,9 @@ https://nextjs.org/docs/messages/export-image-api
 
 Ran into this because standard next js project imports next/image. Removed it by now.
 
+<hr>
+
+Continue at https://youtu.be/mTz0GXj8NN0?t=3140
 
 ## VSCode helper
 
