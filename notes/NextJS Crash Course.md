@@ -2,16 +2,19 @@
 tags: [nextjs]
 title: NextJS Crash Course
 created: '2021-08-27T13:28:11.408Z'
-modified: '2021-08-27T17:41:44.594Z'
+modified: '2021-09-03T10:58:34.436Z'
 ---
 
 # NextJS Crash Course
 
 [Next.js Crash Course 2021 - Traversy Media (YouTube)](https://www.youtube.com/watch?v=mTz0GXj8NN0)
+
+Repo: 
  
 ## Pomodoros 🍅
 
 27.08.2021 🍅🍅🍅🍅🍅
+03.09.2021 🍅
 
 ## Notes
 
@@ -273,11 +276,49 @@ Ran into this because standard next js project imports next/image. Removed it by
 
 Continue at https://youtu.be/mTz0GXj8NN0?t=3140
 
+## API routes
+
+https://nextjs.org/docs/api-routes/introduction
+
+/api/articles/index.js
+```
+import {articles} from '../../../data';
+
+export default function handler(req,res){
+    res.status(200).json(articles)
+}
+```
+/api/articles/[id].js
+```
+import { articles } from '../../../data';
+
+export default function handler({ query: { id } }, res) {
+    const filtered = articles.filter(article => article.id === id)
+    if (filtered.length > 0) {
+        res.status(200).json(filtered[0])
+    } else {
+        res.status(404).json({message:`Article with id of ${id} not found`})
+    }
+
+}
+```
+
+## Custom Meta Components
+
+
+
 ## VSCode helper
 
 - `rafce`(react arrow function export component) - [VS Code ES7 React/Redux/React-Native/JS snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-- Just type <Link and enter, vs code will automatically add `import Link from 'next/link'
+- Just type `<Link` and enter, vs code will automatically add `import Link from 'next/link'
 
+
+## Open questions
+
+- how to do auth?
+- how to do content previews?
+- how to create hybrid app (static/dynamic)?
+- how to do pagination?
 
 ## Credits
 
