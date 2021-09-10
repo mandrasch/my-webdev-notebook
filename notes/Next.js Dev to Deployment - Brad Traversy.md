@@ -1,7 +1,7 @@
 ---
 title: Next.js Dev to Deployment - Brad Traversy
 created: '2021-09-10T05:25:20.662Z'
-modified: '2021-09-10T11:41:13.493Z'
+modified: '2021-09-10T16:24:20.730Z'
 ---
 
 # Next.js Dev to Deployment - Brad Traversy
@@ -20,7 +20,7 @@ https://github.com/mandrasch/oerticker-frontend
 
 ## Pomodoros 🍅
 
-- 10.09.2021 🍅🍅🍅🍅
+- 10.09.2021 🍅🍅🍅🍅🍅🍅🍅
 
 ## My notes
 
@@ -44,6 +44,44 @@ https://github.com/mandrasch/oerticker-frontend
 
 - Clever shorthand, only show component on startpage: ` {router.pathname === '/' && <Showcase />}`
 
+- API routes can't be used with `next export`
+
+- getStaticProps => built at build time, revalidate every second
+
+```
+export async function getStaticProps(){
+...
+ return{
+        props:{events},
+        revalidate: 1
+    }
+}
+```
+
+- get URL params for urls like /events/SLUG/:
+
+  "query: Object - The query string parsed to an object. It will be an empty object during prerendering if the page doesn't have data fetching requirements. Defaults to {}" (https://nextjs.org/docs/api-reference/next/router#router-object) 
+
+```
+export async function getServerSideProps({query:{slug}}){
+    console.log('slug: '+slug);
+```
+
+- next/image supports `object-fit:cover` (https://nextjs.org/docs/api-reference/next/image#objectfit):
+
+```
+ <Image src={link.image ? link.image : '/images/eichkatzerl_cc0_own_photo.png'} layout='fill' objectFit='cover' objectPosition='center center' alt='' />
+```
+
+### Likes
+
 - What i really like so far: Clean separation of components, pages/routes & styles
+- react-icons => sustainable way of inluding only needed icons and without extra server request
 
+### TODO in future
 
+- responsive image sizes?!
+- typescript usage?
+- scss usage?
+- bootstrap integration?
+- learn about react components/build small component
