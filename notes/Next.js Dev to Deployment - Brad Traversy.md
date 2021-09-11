@@ -1,12 +1,14 @@
 ---
 title: Next.js Dev to Deployment - Brad Traversy
 created: '2021-09-10T05:25:20.662Z'
-modified: '2021-09-10T16:24:20.730Z'
+modified: '2021-09-11T10:40:04.350Z'
 ---
 
 # Next.js Dev to Deployment - Brad Traversy
 Udemy course by Brad Traversy (https://twitter.com/traversymedia)
-https://www.udemy.com/course/nextjs-dev-to-deployment
+
+Course: https://www.udemy.com/course/nextjs-dev-to-deployment
+Free video: https://www.youtube.com/watch?v=mTz0GXj8NN0
 
 Stack: NextJS, Strapi(, Cloudinary)
 
@@ -21,6 +23,7 @@ https://github.com/mandrasch/oerticker-frontend
 ## Pomodoros 🍅
 
 - 10.09.2021 🍅🍅🍅🍅🍅🍅🍅
+- 11.09.2021 🍅🍅
 
 ## My notes
 
@@ -78,9 +81,21 @@ export async function getServerSideProps({query:{slug}}){
 - What i really like so far: Clean separation of components, pages/routes & styles
 - react-icons => sustainable way of inluding only needed icons and without extra server request
 
+### Strapi backend
+
+- SQLite is used on dev, PostgreSQL on production
+- Quickstart project, selected no for template question
+- Switched to node 14.x with `sudo n`
+- Peacock for different colors on vscode windows
+- `npm run develop`
+- https://www.npmjs.com/package/strapi-provider-upload-cloudinary?activeTab=readme
+
+
+
 ### TODO in future
 
 - responsive image sizes?!
+- i18n => https://strapi.io/documentation/developer-docs/latest/development/plugins/i18n.html#usage-with-the-graphql-plugin 
 - typescript usage?
 - scss usage?
 - bootstrap integration?
