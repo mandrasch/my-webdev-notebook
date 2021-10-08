@@ -1,7 +1,7 @@
 ---
 title: Next.js Dev to Deployment - Brad Traversy
 created: '2021-09-10T05:25:20.662Z'
-modified: '2021-09-11T10:40:04.350Z'
+modified: '2021-10-08T17:19:51.423Z'
 ---
 
 # Next.js Dev to Deployment - Brad Traversy
@@ -24,6 +24,8 @@ https://github.com/mandrasch/oerticker-frontend
 
 - 10.09.2021 🍅🍅🍅🍅🍅🍅🍅
 - 11.09.2021 🍅🍅
+- 01.10.2021 🍅🍅
+- 08.10.2021 🍅🍅🍅
 
 ## My notes
 
@@ -76,6 +78,30 @@ export async function getServerSideProps({query:{slug}}){
  <Image src={link.image ? link.image : '/images/eichkatzerl_cc0_own_photo.png'} layout='fill' objectFit='cover' objectPosition='center center' alt='' />
 ```
 
+- Search / Query Filter: _contains
+
+https://strapi.io/documentation/developer-docs/latest/developer-resources/content-api/content-api.html#filters
+
+```
+https://STRAPI_URL:1337/?entity/name_contains=searchinput
+```
+
+Multiple search queries combined: 
+
+https://strapi.io/documentation/developer-docs/latest/developer-resources/content-api/content-api.html#filters
+
+```
+const query = qs.stringify({
+  _where: [{ stars: 1 }, { pricing_lte: 20 }],
+});
+
+await request(`/restaurants?${query}`);
+// GET /restaurants?_where[0][stars]=1&_where[1][pricing_lte]=20
+```
+* qs = https://www.npmjs.com/package/qs
+
+! Search page needs to use `getServerSideProps` instead of getStaticProps
+
 ### Likes
 
 - What i really like so far: Clean separation of components, pages/routes & styles
@@ -90,7 +116,22 @@ export async function getServerSideProps({query:{slug}}){
 - `npm run develop`
 - https://www.npmjs.com/package/strapi-provider-upload-cloudinary?activeTab=readme
 
+### Form handling / state
 
+- https://reactjs.org/docs/hooks-state.html
+
+### Strapi - automatic slug creation
+```
+npm i slugify
+```
+
+https://strapi.io/documentation/developer-docs/latest/guides/slug.html#auto-create-update-the-slug-attribute
+
+### Modal components
+
+https://devrecipes.net/modal-component-with-next-js/
+
+- use of custom _document.js
 
 ### TODO in future
 
