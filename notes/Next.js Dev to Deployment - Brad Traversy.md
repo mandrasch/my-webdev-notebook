@@ -1,7 +1,7 @@
 ---
 title: Next.js Dev to Deployment - Brad Traversy
 created: '2021-09-10T05:25:20.662Z'
-modified: '2021-11-08T20:44:24.290Z'
+modified: '2021-11-09T20:27:39.922Z'
 ---
 
 # Next.js Dev to Deployment - Brad Traversy
@@ -33,7 +33,7 @@ https://github.com/mandrasch/oerticker-backend
 - 30.10.2021 🍅🍅🍅🍅
 - 07.11.2021 🍅🍅
 - 08.11.2021 🍅🍅🍅
-
+- 09.11.2021 🍅🍅🍅
 
 ## My course notes
 
@@ -349,6 +349,18 @@ More on postgres:
 
 - https://dzone.com/articles/five-key-postgres-advantages-over-mysql
 
+#### NextJS on Vercel
+
+- before, local build: `npm run build`, preview: `npm start` (Would like to have this for 11ty as well [with path prefix support of course]!)
+- add Enviroment Vars from env.local + NEXT_PUBLIC_FRONTEND_URL (= Vercel URL), it's easy
+
+### Another project: Full Static & Search
+
+- only getStaticPaths / StaticProps, without getServerSideProps
+- tutorial: https://medium.com/@matswainson/building-a-search-component-for-your-next-js-markdown-blog-9e75e0e7d210
+  - pre-commit via husky, pre-commit lives in package.json, so it's run locally (not server side, interesting :-o)
+  - https://www.youtube.com/watch?v=6u9gmwTl3bY
+
 <hr>
 
 ## Summary
@@ -362,6 +374,7 @@ More on postgres:
 - also having every change in git for strapi is cool as well + sqlite for the local dev is very easy to get started
 - VScode autocomplete for imports & co works very nice as well
 - `strapi.isUnauthorized()` as response is quite handy, strapi could be a nice and clean fullstack solution 
+- Clicking on error messages opens the file in VSCode ❤️
 
 
 ### General notes
