@@ -1,7 +1,7 @@
 ---
 title: Svelte und Svelte-Kit
 created: '2021-10-15T13:58:50.298Z'
-modified: '2021-10-22T15:58:13.325Z'
+modified: '2021-11-12T20:38:28.227Z'
 ---
 
 # Svelte und Svelte-Kit
@@ -10,13 +10,56 @@ modified: '2021-10-22T15:58:13.325Z'
 
 - 15.10.2021 🍅
 - 16.10.2021 🍅🍅🍅🍅
-- 22.10.2021
+- 12.11.2021 🍅🍅
 
 ## General
 
-- svelte tries to avoid *boilerplatey* code repetition
+- Svelte adds *reactivity* to components/elements, therefore it is easier to implement interactive elements (in comparison to vanilljs, jquery)
+- Svelte tries to avoid *boilerplatey* code repetition
+- Svelte is a compiler which produces vanilla js
+- Svelte uses scoped css
+- SvelteKit is a framework for building web applications
 
-## Tutorial
+## SvelteKit crash course
+
+https://www.youtube.com/watch?v=UU7MgYIbtAk
+
+CURRENT PROGRESS: https://youtu.be/UU7MgYIbtAk?t=1787
+
+- Prettier => make sure to set the svelte vscode extensions formatter, because it has the svelte prettier plugin integrated. Example for `.vscode/settings.json`: 
+
+```
+{
+	"editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	}
+}
+```
+
+- `<Link>`not needed as in nextjs, just use anchor tags
+
+- Create a new store (https://svelte.dev/docs#writable)
+
+```javascript
+const count = writable(0);
+
+export const pokemon = writable([])
+
+// log it out with data sign (its reactive)
+console.log('pokemons', $pokemons);
+```
+
+- `npm install -D tailwindcss autoprefixer`
+- https://tailwindcss.com/docs/just-in-time-mode JIT
+
+
+#### TODO:
+
+- What about `pathPrefix (11ty)`, deploy to subdirectory?
+
+### Offical website tutorial
 
 https://svelte.dev/tutorial/basics
 
