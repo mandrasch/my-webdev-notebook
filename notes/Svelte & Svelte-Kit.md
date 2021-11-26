@@ -1,10 +1,10 @@
 ---
-title: Svelte und Svelte-Kit
+title: Svelte & Svelte-Kit
 created: '2021-10-15T13:58:50.298Z'
-modified: '2021-11-12T20:38:28.227Z'
+modified: '2021-11-26T19:30:53.750Z'
 ---
 
-# Svelte und Svelte-Kit
+# Svelte & Svelte-Kit
 
 ## Pomodoros 🍅
 
@@ -25,6 +25,7 @@ modified: '2021-11-12T20:38:28.227Z'
 https://www.youtube.com/watch?v=UU7MgYIbtAk
 
 CURRENT PROGRESS: https://youtu.be/UU7MgYIbtAk?t=1787
+https://www.youtube.com/watch?v=UU7MgYIbtAk&t=533s
 
 - Prettier => make sure to set the svelte vscode extensions formatter, because it has the svelte prettier plugin integrated. Example for `.vscode/settings.json`: 
 
