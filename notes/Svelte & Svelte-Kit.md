@@ -1,7 +1,7 @@
 ---
 title: Svelte & Svelte-Kit
 created: '2021-10-15T13:58:50.298Z'
-modified: '2021-11-26T19:30:53.750Z'
+modified: '2021-12-04T13:50:21.988Z'
 ---
 
 # Svelte & Svelte-Kit
@@ -11,6 +11,8 @@ modified: '2021-11-26T19:30:53.750Z'
 - 15.10.2021 🍅
 - 16.10.2021 🍅🍅🍅🍅
 - 12.11.2021 🍅🍅
+- 03.12.2021 🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅
+- 04.12.2021 🍅🍅🍅🍅
 
 ## General
 
@@ -19,6 +21,15 @@ modified: '2021-11-26T19:30:53.750Z'
 - Svelte is a compiler which produces vanilla js
 - Svelte uses scoped css
 - SvelteKit is a framework for building web applications
+
+## Building tzettel (little prototype)
+
+- Svelte strap https://sveltestrap.js.org/?path=/story/components--get-started
+ "How to use SASS in Sveltekit? - Sveltekit Tutorial - 15" https://www.youtube.com/watch?v=yN8R9pKqtV8
+- https://github.com/sveltejs/svelte-preprocess
+  - Install: https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md
+- https://github.com/sveltejs/kit/tree/master/packages/adapter-static#github-pages
+- relative links https://javascript.plainenglish.io/sveltekit-github-pages-4fe2844773de
 
 ## SvelteKit crash course
 
