@@ -1,7 +1,7 @@
 ---
 title: SvelteKit & Supabase
 created: '2021-11-26T12:35:29.411Z'
-modified: '2021-11-26T19:32:20.141Z'
+modified: '2022-01-28T00:23:11.047Z'
 ---
 
 # SvelteKit & Supabase
@@ -16,6 +16,21 @@ TODO: https://supabase.com/docs/guides/with-svelte
 ## Pomodoros 🍅
 
 - 26.11.2021 🍅🍅🍅🍅🍅🍅
+- 27.01.2022 🍅🍅🍅🍅🍅🍅🍅🍅
+
+
+
+## SvelteKit and Supabase Tutorial with Authentication - Build a SvelteKit App Part 2
+
+- Video: https://www.youtube.com/watch?v=YqIyET7XKIQ&t=1s 
+- `npm install @supabase/supabase-js` https://github.com/supabase/supabase-js
+- Implement Authorization using Row Level Security with Supabase
+ with John Meyers https://www.youtube.com/watch?v=Ow_Uzedfohk
+
+- How should this be deployed? Static Site generated or with some Server Rendering?
+  - See e.g. https://www.reddit.com/r/sveltejs/comments/ov4yc3/questions_on_sveltekit_and_supabase/ and https://www.ashleyconnor.co.uk/2021/06/24/authenticated-server-rendered-pages-with-sveltekit-and-supabase
+
+- My Evaluation of SvelteKit for Full-Stack Web App Development https://cprimozic.net/blog/trying-out-sveltekit/
 
 ## General Notes
 

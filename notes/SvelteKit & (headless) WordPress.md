@@ -1,17 +1,32 @@
 ---
-title: Svelte & (headless) WordPress
+title: SvelteKit & (headless) WordPress
 created: '2021-11-26T19:30:56.384Z'
-modified: '2021-11-26T20:58:49.634Z'
+modified: '2022-01-04T19:45:16.806Z'
 ---
 
-# Svelte & (headless) WordPress
+# SvelteKit & (headless) WordPress
 
 1. https://www.youtube.com/watch?v=94FZvB6B_c0
 
+TO-READ:
+- [ ] https://codechips.me/svelte-module-scripts-explained/
+- [ ] https://kit.svelte.dev/docs#loading-input-fetch
+- [ ] https://kit.svelte.dev/docs#loading-input-fetch
+- [ ] https://www.youtube.com/watch?v=ht14hTTDklA
+- [ ] SvelteKit Routing https://www.youtube.com/watch?v=uyde7dAQwkA
+- [ ] Implement menu https://www.wpgraphql.com/docs/menus/
+- [ ] Implement router so that all links will work (at least for pages and posts?)
+- [ ] https://wordpress.org/plugins/vercel-deploy-hooks/ => similiar solution for github and render.com? 
+- [ ] GraphQL Pagination (!)
+- [ ] WPML?
+- [ ] Deploy node-static on render.com !
 
 ## Pomodoros 🍅
 
 - 26.11.2021 🍅🍅🍅
+- 10.12.2021 🍅🍅🍅🍅🍅🍅🍅
+- 11.12.2021 🍅🍅🍅🍅
+- 04.01.2022 🍅🍅🍅🍅🍅🍅🍅🍅
 
 ## Notes
 
