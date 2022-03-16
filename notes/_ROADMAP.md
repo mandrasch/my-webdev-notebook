@@ -1,12 +1,15 @@
 ---
 title: _ROADMAP
 created: '2021-11-27T10:59:05.786Z'
-modified: '2022-03-16T15:41:38.953Z'
+modified: '2022-03-16T15:42:47.016Z'
 ---
 
 # _ROADMAP
 
-- A) Svelte/Inertia/Laravel => build demo app greenrunners
+- A) Svelte/Inertia/Laravel
+  - 1. build demo app greenrunners
+  - 2. Learn more about laravel (migrations, auth, etc.)
+  - 3. Finish laracasts course "Inertia and SPA Techniques" 
 - B) WordPress + bootscore, Gutenberg theme or something different, what's the nicest way for small flexible projects
   - + ACF(, pods, carbon fields, etc.?)
 - C) + static site generator / headless option for WP?
