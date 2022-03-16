@@ -1,10 +1,19 @@
 ---
 title: _ROADMAP
 created: '2021-11-27T10:59:05.786Z'
-modified: '2021-12-17T16:46:08.200Z'
+modified: '2022-03-16T15:40:51.620Z'
 ---
 
 # _ROADMAP
+
+- A) Svelte/Inertia/Laravel => build demo app greenrunners
+- B) WordPress + bootscore, Gutenberg theme or something different, what's the nicest way for small flexible projects
+  - + ACF(, pods, carbon fields, etc.?)
+
+
+<hr>
+
+## Old:
 
 - [ ] Simples Web-Tool bauen => OpenLayers Map Export (https://openlayers.org/en/latest/examples/export-map.html) or Leaflet with svelte? (https://dev.to/gabiaxel/exporting-leaflet-map-to-image-in-the-browser-16am)
     - Wie kommt es dann in WP? Download Image + Vorlage für Gutenberg Buttons?

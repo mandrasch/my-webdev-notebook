@@ -1,15 +1,13 @@
 ---
-title: Svelte & Inertia (Laravel)
+title: Svelte & InertiaJS (Laravel)
 created: '2022-02-26T19:14:41.173Z'
-modified: '2022-03-16T15:35:45.924Z'
+modified: '2022-03-16T15:38:44.228Z'
 ---
 
-# Svelte & Inertia (Laravel)
+# Svelte & InertiaJS (Laravel)
 
 - [x] [Laracast series: Build Modern Laravel Apps Using Inertia.js](https://laracasts.com/series/build-modern-laravel-apps-using-inertia-js) 🥳
 - [ ] [Laracast series: Inertia and SPA Techniques](https://laracasts.com/series/inertia-and-spa-techniques)
-
-- Repo: 
 
 ## Pomodoros 🍅
 
@@ -21,10 +19,12 @@ modified: '2022-03-16T15:35:45.924Z'
 - 13.03.2022 🍅🍅
 - 16.03.2022 🍅🍅+0,5
 
-## Next tasks
+## Next goals
 
 - [ ] Start demo app greenrunners => "add a run", "edit a run", "register", "mark as paid
-- [ ] Variable layout not working, see inertia discord
+- [ ] Finish second course
+- [ ] Figure out if'd like to use bootstrap, sveltestrap or tailwind
+- [ ] Set layout in main controller, not in every component (see discord -> switch to vite?)
 
 ## TODOs:
 
