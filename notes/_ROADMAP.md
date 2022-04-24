@@ -1,11 +1,47 @@
 ---
 title: _ROADMAP
 created: '2021-11-27T10:59:05.786Z'
-modified: '2022-03-16T15:42:47.016Z'
+modified: '2022-04-22T13:21:13.273Z'
 ---
 
 # _ROADMAP
 
+Projects and stacks, which I want to explore.
+
+I want to use mainly Svelte for interactive experience, but also want to use static site generation (SSG) as much as possible in regards to Sustainable Web Design.
+
+
+## April / May / June / July 2022
+
+- A) Normal bootstrap5 site with Kirby ([bahn-zum-see](https://github.com/mandrasch/bahn-zum-see))
+  - try out -> https://github.com/getkirby/staticache
+  - try out deployment (composer -> manitu hosting)
+
+- B) PWA Web-App, content editable via backend (bahn-zum-see?)
+  - Kirby (+ KQL) + ...
+    - SvelteKit?
+    - Astro?
+
+- Optional: Full static site, content editable via backend
+  - Astro + Svelte + Kirby (+ KQL)?
+  - 11ty + Kirby (+ KQL)?
+  - SvelteKit + Kirby (+ KQL)?
+  - Headless WordPress?
+
+- C) Multi-User-App (Greenrunners)
+  - Svelte Kit + ...
+    - Laravel Sanctum?
+    - Supabase/Firebase?
+  - Inertia + Vue (SSR)?
+  - Or https://laravel-livewire.com/?
+
+
+  PWA => https://www.npmjs.com/package/vite-plugin-pwa
+
+
+<hr>
+
+**Old 2**
 - A) Svelte/Inertia/Laravel
   - 1. build demo app greenrunners
   - 2. Learn more about laravel (migrations, auth, etc.)
@@ -15,9 +51,8 @@ modified: '2022-03-16T15:42:47.016Z'
 - C) + static site generator / headless option for WP?
 
 
-<hr>
 
-## Old:
+**Old 1**
 
 - [ ] Simples Web-Tool bauen => OpenLayers Map Export (https://openlayers.org/en/latest/examples/export-map.html) or Leaflet with svelte? (https://dev.to/gabiaxel/exporting-leaflet-map-to-image-in-the-browser-16am)
     - Wie kommt es dann in WP? Download Image + Vorlage für Gutenberg Buttons?

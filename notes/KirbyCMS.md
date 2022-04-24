@@ -1,7 +1,7 @@
 ---
 title: KirbyCMS
 created: '2022-04-15T15:42:09.556Z'
-modified: '2022-04-16T11:36:50.028Z'
+modified: '2022-04-18T18:12:50.028Z'
 ---
 
 # KirbyCMS
@@ -12,7 +12,9 @@ modified: '2022-04-16T11:36:50.028Z'
 - 15.04.2022 🍅🍅🍅🍅🍅
 - 16.04.2022 🍅🍅🍅🍅🍅
 
-=> continue here: https://youtu.be/QwjX8JAwBws?t=2457, single tour templates, deploy via composer, add basemap feature 
+=> continue here: https://youtu.be/QwjX8JAwBws?t=2457
+=> single tour templates, deploy via composer, add basemap feature, i18n, try kirby version, activate panel
+=> add pipeline (node lts, install composer in pipeline, send via save sftp)
 
 ## Videos & notes
 
@@ -42,3 +44,4 @@ modified: '2022-04-16T11:36:50.028Z'
 - [ ] Test multi language
 - [ ] Test cookies, ytube embeds and gmaps
 - [ ] Test https://getkirby.com/plugins/arnoson/kirby-vite
+- [ ] https://maurice-renck.de/de/tech/2021/automatische-beitragsbilder
