@@ -1,14 +1,77 @@
 ---
 title: _2DO-NEXT
 created: '2022-04-16T11:38:33.355Z'
-modified: '2022-04-24T08:07:15.513Z'
+modified: '2022-05-24T17:54:00.479Z'
 ---
 
 # _2DO-NEXT
 
+=> TWO MONTHS LEFT => FINISH WITH MULTI SITE APPS AND NUXT/VUE! :-)
+
+1. Realtime APP => https://codecourse.com/courses/create-a-realtime-post-timeline-with-nuxt-and-laravel
+
+--> **REQUIRES:** JWT nuxt/auth instead of https://www.youtube.com/watch?v=jIzPuM76-nI or https://www.youtube.com/watch?v=Pd6aEtzcGSk&t=937s
+
+=> Repo: https://github.com/mandrasch/codecourse-laravel-nuxt-realtime (Nuxt2)
+
+2. Nuxt3
+https://v3.nuxtjs.org/
+https://github.com/epicmaxco/vuestic-ui 
+
+https://codecourse.com/watch/getting-started-with-nuxt-3
+
+REPO: nuxt3-test
+
+https://blog.thepatik.com/top-5-nuxtjs-modules-for-your-next-project-2022-edition
+
+3. Optional: Laravel Graphl + nuxt -> https://codecourse.com/courses/build-a-job-board-with-laravel-graphql-nuxt-and-apoll
+
+(Other ways to go would be Angular or react ...)
+
+GOAL: Full multi user app with nuxt <-> laravel
+
+<hr>
+
+Thoughts about SSR vs. CSR:
+
+- Nuxt can be deployed as SPA if there is no project budget for SSR hosting
+- CSR is fine for highly interactive apps without SEO https://twitter.com/devongovett/status/1528888382289494023
+
+<hr>
+
+Bonus: Tailwind crash course https://www.youtube.com/watch?v=dFgzHOX84xQ
+
+<hr>
+
+
+- Fullstack => Nuxt + Laravel? https://www.youtube.com/watch?v=FpwOvxsG8Js&t=32s 
+  - Realtime APP => https://codecourse.com/courses/create-a-realtime-post-timeline-with-nuxt-and-laravel 
+  - Laravel Graphl + nuxt -> https://codecourse.com/courses/build-a-job-board-with-laravel-graphql-nuxt-and-apollo
+
+- At the end: TESTING? https://codecourse.com/courses/unit-testing-with-php-unit or Pest or whatever?
+
+- Bonus: Tailwind (or another accessible frontend UI)
+<hr>
+
+- Videos: WP PULL BACKUP, DDEV PR Gitpod check, ... => put in kitdocs
+
+- Finish kirby walkthroughs, headless WP + astro
+
+<hr>
+
 - BahnZumSee with WordPress, WPGraphQL, ACF, Members + Astro => bzs-api.mandrasch.eu
   - implement **paginate()** in Astro (see below)
   - => complete project!
+  - https://www.youtube.com/watch?v=vTgTNVrOXZY
+
+  => erstmal einfach Bootstrap Styles nutzen...
+
+- Kirby KQL (-> agency context)
+
+- Astro => Bootstrap5 => include JS via normal asset (node_modules => dist => copy it ... )
+
+
+
 
 <hr>
 
