@@ -1,20 +1,188 @@
 ---
 title: _2DO-NEXT
 created: '2022-04-16T11:38:33.355Z'
-modified: '2022-05-24T17:54:00.479Z'
+modified: '2022-11-14T18:17:02.076Z'
 ---
 
 # _2DO-NEXT
 
-=> TWO MONTHS LEFT => FINISH WITH MULTI SITE APPS AND NUXT/VUE! :-)
+## Personal stack
 
-1. Realtime APP => https://codecourse.com/courses/create-a-realtime-post-timeline-with-nuxt-and-laravel
+- WordPress (open source & dynamic community)
+- (Headless) Statamic + SvelteKit / others
+  - [ ] https://statamictutorials.com/course/how-to-deploy-statamic/episode/0
+- CraftCMS - very stable projects
 
---> **REQUIRES:** JWT nuxt/auth instead of https://www.youtube.com/watch?v=jIzPuM76-nI or https://www.youtube.com/watch?v=Pd6aEtzcGSk&t=937s
+- Tailwind
+- 
+
+## Next:
+
+=> SvelteKit SSR => try/catch for fetch to see what's going or (use own api for time() on manitu?)
+
+=> SvelteKit SSR demo project for showcase portfolio? (public 2 lake, public hike, etc.?)
+
+-> Find reliable full stack approaches?
+-> OER: Beats Biblionetz für OERhörnchen abbilden?
+-> Public Transport Hikes / Bahn Zum See (Solo project, markdown is fine, what about images?)
+
+-> the client dashboard is always the challenge?
+
+- [ ] Vue as addition to Svelte Skills "needed"?
+
+## SvelteKit
+
+- [ ] Learn more about SSR hosting, build real sites with it
+- [ ] Understand Netlify CMS and GDPR-compatible hosting https://www.youtube.com/watch?v=Pz-kQJxZx3w
+
+## WordPress
+
+- [ ] Roots Sage + Svelte / Vue Components
+
+## Typo3 
+
+- [ ] Use Svelte/Vue inside typo3 via API
+
+## CraftCMS
+
+- [ ] Deploy article dev.to part II, add deployer pipeline and test updates
+
+- [ ] Real World Craft CMS Course https://craftquest.io/courses/real-world-craft-cms
+- [ ] CraftCMS Deployment (Deployer / SSH+git+composer?) https://github.com/mandrasch/train-to-lake-craftcms, https://github.com/thomasbendl/craft4-ddev-vite-blueprint, https://www.mitrais.com/news-updates/how-to-create-ci-cd-with-github-action-and-laravel/
+https://git.typo3.org/services/demo.typo3.org/site/-/blob/main/.gitlab-ci.yml 
+
+- Skills: 
+  - [ ] Tailwind Crash Course (+ Design System? https://www.youtube.com/watch?v=cZc4Jn5nK3k)
+  - [ ] Typescript Crash Course
+  - [ ] SvelteKit + Tailwind + TypeScript? https://tailwindcss.com/docs/guides/sveltekit
+
+- Side project
+  - [ ] ScreenreadThis: Convert to SvelteKit SSR project
+  - [ ] Bootstrap5 + vite + CraftCMS? (train2lake?)
+
+
+<hr>
+
+Screenreader Remote Control:
+
+- https://www.youtube.com/watch?v=Oz4CBHrxMMs
+- https://github.com/raghavk92/Kontroller/issues/15
+
+**NeXT: BahnZumSee + CraftCMS Learning Project**
+
+1. BahnZumSee
+- CraftCMS Prototype or SvelteKit Prototype or Nuxt Prototype?
+- Both?
+- Headless? 
+- Open Source would be much cooler for projects like these?
+  - Like Bedrock + WPGraphQL + ACF or WPGraphQL + Pods (https://docs.pods.io/tutorials/best-practices-for-pods-deployment/)
+  - t3 https://extensions.typo3.org/extension/headless, https://github.com/TYPO3-Headless/nuxt-typo3, etc.?
+  - GetCockpit v2? https://twitter.com/getcockpit/status/1554060611998433280 v2
+
+2.CraftCMS test project: _______________________
+
+- CraftCMS
+- CraftCMS + Svelte
+  - https://nystudio107.com/blog/using-vite-js-next-generation-frontend-tooling-with-craft-cms
+  - https://blog.galaxyweblinks.com/craft-cms-building-the-frontend-of-a-website-using-twig-and-graphql/
+  - https://github.com/D3strukt0r/CraftCMS-Svelte-Blueprint
+- Sprig Reactivity Twig, like Laravel Livewire? https://putyourlightson.com/sprig?s=09
+  - https://www.youtube.com/watch?v=DJqdF7kYgjE
+  - https://putyourlightson.com/sprig/videos?s=09#sprigboard
+  - https://blog.ohheybrian.com/2022/06/moving-from-svelte-to-htmx/?s=09 
+- (Blitz https://plugins.craftcms.com/blitz)
+
+
+<hr>
+
+=> Deployer Statamic auf Ploi ausprobieren ... https://lorisleiva.com/deploy-your-laravel-app-from-scratch/deploy-using-ploi + https://www.youtube.com/watch?v=Dsld-2iHv2k
+- https://statamic.dev/tips/zero-downtime-deployments#understanding-zero-downtime-deployment-file-structure
+
+
+=> Statamic deploy with deployer and git-automation on manitu, https://github.com/mandrasch/statamic-deployer-test
+  => document installation & setup
+
+  => erstmal mit sftp lösen?! deployer auf mittwald dann machen next week ...
+
+###  ! https://statamictutorials.com/  !
+
+  Product idea: Statamic Cloud with DDEV local support
+
+**Potential: Build simple SPA first, can be later run as SSR as well (if you have budget for project)**
+
+=> **Filter Grid** -> Classic PHP Statamic, collections filters, conditions, get + VUE SFC / Svelte with Content REST API 
+  - https://statamic.dev/rest-api#filtering
+  - https://www.youtube.com/watch?v=sJR3pVx-M58
+  - https://www.youtube.com/watch?v=mLv2DyfeELQ
+  - https://dev.to/eternaldev/introduction-to-svelte-derived-store-129
+
+=> **TODO: IMPLEMENT WITH STATAMIC AND SVELTE / VUE SFC!!**
+  => Collection: Sea-Destinations 
+  => https://www.youtube.com/results?search_query=vue3+pokedex 
+    => https://www.youtube.com/watch?v=QJhqr7jqxVo
+  => Test Deployment to Manitu, just SFTP transfer? (it's slow, but easiest way?) / Alternative: DeployNow
+
+
+<hr>
+
+- [ ] Implement Bahn zum See, have fun -> ** Statamic (free)?** 
+  - **==>>> https://www.youtube.com/watch?v=XHoT8jOJa6c** 
++ Vue SFC or Svelte Comps - or - SPA via NUXT3 + Twill GraphQL? https://github.com/kallefrombosnia/twill-graphql
+  - Filter Grid
+  - Does it need a backend or just markdown?
+- Improve my-ddev-lab docs, add screencasts for all pull actions on WP
+  - get to run vite for all projects, add twill-ddev-starter
+
+## Topics in which to grow :-)
+
+- CMS
+  - Statamic
+  - Kirby
+  - Bonus: Twill
+  - Bonus: Strapi / Directus
+    - Learn how to host via vClouds
+  - Bonus: Headless WordPress + Bedrock + GraphQL
+- Frontend Frameworks
+  - Nuxt3
+  - SvelteKit
+  - (Ionic?)
+- Languages / Tools
+  - Vue3 Composition
+  - Svelte
+  - Vite
+  - Tailwind
+  - Laravel
+  - Bonus: Typescript
+
+EASY: SPA Frontend + Laravel/PHP Backend or SPA + Hosted Backend, SSR can be paid later as well
+
+<hr>
+
+- Statamic + Vue/Svelte Components ODER TWILL (TRUE OS) + Vue/Svelte => BahnZumSee Test? Twill für Hobby Projects?
+  - Kirby / Statamic für prof. Agency Work?
+- für größeres: Directus + Nuxt/SvelteKit?
+  (headless?)
+
+
+1. **Complete Realtime App** => https://codecourse.com/courses/create-a-realtime-post-timeline-with-nuxt-and-laravel
 
 => Repo: https://github.com/mandrasch/codecourse-laravel-nuxt-realtime (Nuxt2)
 
-2. Nuxt3
+
+2. **Nuxt3 + Laravel** => build simple app such as grennrunners! (JWT or sanctum via DDEV / browsersync)
+
+
+Develop a Multi User App, maybe with nuxt3 already?
+
+Or use Inertia + Vue? 
+or ...?
+
+Is decoupled easier? **Nuxt - Zero config?**
+Advantage nuxt: **Can be a PWA... that's cool?!** => PWAs sind scho interessant?!
+
+or **Focus on skills like Vue, Tailwind, Typescript?**
+
+3. Nuxt3
 https://v3.nuxtjs.org/
 https://github.com/epicmaxco/vuestic-ui 
 
@@ -24,7 +192,13 @@ REPO: nuxt3-test
 
 https://blog.thepatik.com/top-5-nuxtjs-modules-for-your-next-project-2022-edition
 
-3. Optional: Laravel Graphl + nuxt -> https://codecourse.com/courses/build-a-job-board-with-laravel-graphql-nuxt-and-apoll
+4. Statamic + Nuxt 
+
+https://github.com/jasonvarga/statamic-graphql-nuxt
+
+5. Tailwind Layouting
+
+6. Optional: Laravel Graphl + nuxt -> https://codecourse.com/courses/build-a-job-board-with-laravel-graphql-nuxt-and-apoll
 
 (Other ways to go would be Angular or react ...)
 
