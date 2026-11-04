@@ -1,7 +1,7 @@
 ---
 title: Vue Mastery / Real World Nuxt
 created: '2025-01-16T19:46:39.335Z'
-modified: '2025-02-09T17:39:14.852Z'
+modified: '2025-02-09T22:43:06.496Z'
 ---
 
 # Vue Mastery / Real World Nuxt
@@ -12,7 +12,7 @@ modified: '2025-02-09T17:39:14.852Z'
 20.01.2025 🍅
 02.02.2025 🍅
 07.02.2025 🍅🍅 
-09.02.2025 🍅 
+09.02.2025 🍅🍅 
 
 ## Real World Nuxt 
 
@@ -138,6 +138,144 @@ const postSlug = useRoute().params.post
 ```
 
 ### Layouts
+
+- <NuxtLayout>
+
+```html
+<!-- app.vue -->
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
+```
+
+```vue
+<!-- layouts/default.vue -->
+<template>
+  <div class="layout">
+    <nav class="nav">
+      <NuxtLink class="link" to="/" :class="{ current: $route.path === '/' }">
+        Home
+      </NuxtLink>
+      <NuxtLink
+        class="link"
+        to="/categories"
+        :class="{ current: $route.path === '/categories' }"
+      >
+        Categories
+      </NuxtLink>
+    </nav>
+    <slot />
+  </div>
+</template>
+```
+
+Register different layout for pages:
+
+```js
+definePageMeta({
+  layout: 'breadcrumb',
+})
+```
+
+### Layout with useState
+
+> The useState composable creates a reactive and SSR-friendly shared state. (https://nuxt.com/docs/api/composables/use-state)
+
+```js
+// SSR compatible, can be accessed on client site
+// shared state via key 'category', fn --> return intial value
+const categoryState = useState('category', () => ({
+  name: '',
+  slug: '',
+}))
+
+// set value after first definition
+if (category.value) {
+  categoryState.value = {
+    name: category.value.name,
+    slug: category.value.slug,
+  }
+}
+```
+
+- shared in other components by using the same key
+- state will get initialized once in the entire request
+
+```js
+// otherComponent
+const categoryState = useState('category', () => ({
+  name: '',
+  slug: ''
+}))
+```
+
+- can be moved to composables and dedicated file to now write it everywhere
+
+```js
+// composables/useCategoryState.ts
+export const useCategoryState = () => {
+  return useState('category', () => ({
+    name: '',
+    slug: ''
+  }))
+}
+```
+
+#### Hydration mismatch
+
+> hook.js:608 Hydration completed but contains mismatches.
+
+- layout is processed before page component --> state in layout is empty string on server, before hydration/client
+
+fix via `<ClientOnly>`:
+
+```js
+ <ClientOnly>
+        <NuxtLink class="link" :to="`/categories/${categoryState.slug}`">
+          Category: {{ categoryState.name }}
+        </NuxtLink>
+      </ClientOnly>
+```
+
+### Rendering Modes
+
+- SSR
+- SSG
+- ISR
+- SWR - Stale while revalidate 
+
+
+```js
+// nuxt.config.ts
+  routeRules: {
+    '**': { prerender: true }
+    // '**': { isr: 300 }
+    // '**': { swr: 300 }
+    // mix with pre-gen on build, than re-gen in background
+    // '**': { swr: 300, prerender: true }
+  }
+```
+
+- ISR is cached on CDN, faster than SWR (cached in App Server)
+- ssr:false --> pure SPA
+
+- hybrid rendering: specify paths per pages, homepage SSR, /categories - prerender true, 
+
+- ssr is default behavior
+
+```js
+export default defineNuxtConfig({
+  routeRules: {
+    '/': { ssr: true }, // Home Page
+    '/categories': { prerender: true }, // Categories Page
+    '/categories/*': { swr: 300 }, // Category Pages
+    '/posts/*': { swr: 60 } // Post Details Page
+  },
+  ...
+})
+```
 
 
 
