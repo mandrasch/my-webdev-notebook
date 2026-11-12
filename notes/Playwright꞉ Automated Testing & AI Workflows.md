@@ -1,7 +1,7 @@
 ---
 title: 'Playwright: Automated Testing & AI Workflows'
 created: '2026-11-02T12:07:42.922Z'
-modified: '2026-11-06T12:23:47.393Z'
+modified: '2026-11-12T15:07:01.725Z'
 ---
 
 # Playwright: Automated Testing & AI Workflows
@@ -12,7 +12,14 @@ https://master.dev/courses/playwright/ - Steve Kinney
 - [ ] Apply to privat side projects like Karenz Wizard?
 - [ ] Visual Regression? https://bsky.app/profile/paolo.ricciuti.me/post/3mzgbnpsut22l 
 - [ ] How to apply this for a11y?
+  - [ ] Potential: BITV Test --> automate more?
 - [ ] check out https://e2e.com/ or similiar?  https://tester.army/ 
+  - [ ] https://www.youtube.com/@e2e-inc
+  - [ ] https://www.youtube.com/watch?v=jydYq7oAtD8 Software Testing Course – Playwright, E2E, and AI Agents - freecodecamp.org
+  - [ ] Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp https://www.youtube.com/watch?v=pz74r-4dGfQ
+  - [ ] AI Agents Still Can't Maintain Your Codebase https://www.youtube.com/watch?v=ntO2eQ2iu6o
+
+
 
 ## Pomodoros 🍅
 
@@ -20,6 +27,7 @@ https://master.dev/courses/playwright/ - Steve Kinney
 04.11.2026 🍅
 05.11.2026 🍅
 06.11.2026 🍅
+09.11.2026 🍅
 
 ## Notes
 
@@ -91,6 +99,18 @@ https://stevekinney.com/courses/self-testing-ai-agents/lab-locator-challenges
 
 - toMatchSnapshot in jest, vitest, etc. - css can be changed, but a11y tree is not changed = great for validating that no function was changed
 
+### Projects
 
+https://playwright.dev/docs/test-projects
+
+### Authentication
+
+- https://stevekinney.com/courses/self-testing-ai-agents/storage-state-authentication
+
+- don't login every time with `beforeEach`
+- instead take the current state of cookies/localStorage in the browser session and save/re-use it, via `tests/auth.setup.ts`
+- `indexedDB` is not included in the snapshot by default.
+
+Official docs: https://playwright.dev/docs/auth
 
 
